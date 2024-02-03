@@ -45,3 +45,8 @@ function scrollToSection(sectionId) {
       section.scrollIntoView({ behavior: 'smooth' });
   }
 }
+
+function moveTo(targetPage) {
+  // Use window.location.href to navigate to the target page
+  window.location.href = targetPage;
+}

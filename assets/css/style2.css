@@ -146,6 +146,8 @@
     color: var(--black-coral);
     font-size: 1.6rem;
     line-height: 1.7;
+    justify-content: center;
+    align-items: center;
   }
   
   body.nav-active { overflow: hidden; }
@@ -701,11 +703,11 @@
   
   
   
-  /*-----------------------------------*\
+/*-----------------------------------*\
  * #FOOTER
 \*-----------------------------------*/
 
-.footer { font-family: var(--ff-roboto); }
+.footer { font-family: var(--ff-roboto);background:whitesmoke; }
 
 .footer-top { background: var(--cultured); }
 
