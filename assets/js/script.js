@@ -50,3 +50,9 @@ function moveTo(targetPage) {
   // Use window.location.href to navigate to the target page
   window.location.href = targetPage;
 }
+
+function enlargeImage(img) {
+  img.classList.toggle('enlarged');
+}
+
+

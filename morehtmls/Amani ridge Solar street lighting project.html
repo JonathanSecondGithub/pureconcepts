@@ -54,7 +54,7 @@
 
       .grid-container1 {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
         /*max-width: 800px;  Adjust the max width as per your preference */
         padding: 20px;
@@ -78,7 +78,25 @@
         object-fit: cover; /* Maintain aspect ratio of the images */
         justify-content: center;
         align-items: center;
+        transition: width 0.5s ease;
       }
+
+      /* .grid-item1 img.enlarged {
+        width: 250%;
+        height: 250%;
+      } */
+
+      /* .grid-item1:hover {
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        opacity: 1;
+        transform: scale(2);
+        -ms-transform: scale(2);
+        -webkit-transform: scale(2);
+      } */
     </style>
   </head>
 
@@ -325,6 +343,7 @@
                 <img
                   src="../assets/images/Amani ridge Solar street lighting project/img2.jpg"
                   alt="Image 1"
+                  onclick="enlargeImage(this)"
                 />
               </div>
               <div class="grid-item1">
@@ -1067,7 +1086,7 @@
     <!-- 
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 
     <!-- 
     - ionicon
